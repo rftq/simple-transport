@@ -9,25 +9,38 @@ public class Main {
         Velosiped stels = new Velosiped("Stels", 2022, 30, 7, true);
         System.out.println();
 
+        Samolet boeing = new Samolet("Boeing", 2018, 900, 11000, true);
+        System.out.println();
+
         // Показываем информацию
         toyota.pokazatInfo();
-
         System.out.println();
 
         stels.pokazatInfo();
+        System.out.println();
+
+        boeing.pokazatInfo();
 
         // Используем методы
         System.out.println("\n= Методы =");
+        toyota.checkAutoTransmission();
         toyota.ehat();
         toyota.signalit();
-        toyota.checkAutoTransmission();
+        toyota.ostanovitsya();
+
+        System.out.println();
+
+        stels.checkMountainVersion();
+        stels.ehat();
+        stels.krutitPedali();
         stels.ostanovitsya();
 
         System.out.println();
 
-        stels.ehat();
-        stels.krutitPedali();
-        stels.ostanovitsya();
+        boeing.checkIsPassengers();
+        boeing.vzletat();
+        boeing.ehat();
+        boeing.ostanovitsya();
 
         // Используем сеттеры для изменения данных
         System.out.println("\n= Изменяем данные через сеттеры =");
