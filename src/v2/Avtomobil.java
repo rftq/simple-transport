@@ -38,7 +38,7 @@ public class Avtomobil extends Transport {
     }
 
     // Свой уникальный метод
-    public void autoTransmission() {
+    public void checkAutoTransmission() {
         if (isAutoTransmission) {
             System.out.println(getMarka() + " едет на автомате!");
         } else {
@@ -53,10 +53,6 @@ public class Avtomobil extends Transport {
         System.out.println("Количество дверей: " + kolDverej);
         System.out.println("Автоматическая трансмиссия: " + (isAutoTransmission ? "Да" : "Нет"));
     }
-
-
-
-
 
 
 }

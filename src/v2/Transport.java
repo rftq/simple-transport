@@ -20,7 +20,7 @@ public class Transport {
         if (marka != null && !marka.isEmpty()) {
             this.marka = marka;
         } else {
-            System.out.println("Ошибка: Марка не может быть без названия!");
+            System.out.println("Ошибка: марка не может быть без названия!");
         }
     }
 
@@ -29,7 +29,7 @@ public class Transport {
     }
 
     public void setGodVypuska(int godVypuska) {
-        if (godVypuska > 0 && godVypuska < 2026) {
+        if (godVypuska > 0 && godVypuska <= 2026) {
             this.godVypuska = godVypuska;
         } else {
             System.out.println("Ошибка: некорректный год выпуска!");
