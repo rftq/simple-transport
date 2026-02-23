@@ -63,5 +63,14 @@ public class Main {
         System.out.print("Поменяли назначение, теперь, ");
         stels.checkMountainVersion();
 
+        System.out.println();
+
+        boeing.setGodVypuska(2024);
+        System.out.println("Новый год выпуска: " + boeing.getGodVypuska());
+        boeing.setMarka("Airbus");
+        System.out.println("Новое название: " + boeing.getMarka());
+        boeing.setPassengers(false);
+        System.out.print("Поменяли назначение, теперь, ");
+        boeing.checkIsPassengers();
     }
 }
